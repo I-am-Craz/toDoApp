@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>title</title>
-    <link rel="stylesheet" href="styles.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>to do app</title>
 </head>
 <body>
 <div class="container">
-    <div class="title">To do</div>
-    <div class="content">
-            <div class="content__info">
-                <input type="date" id="date" class="text" lang="en">
-                <div class="content__info-item">
-                    <div class="content__info-text text">all tasks :
-                        <input type="number" class="content__info-number" id="all-tasks" value="0" readonly>
-                    </div>
+    <h2 class="title">To do</h2>
+    <section class="content">
+        <div class="content__info">
+            <div class="content__info-item">
+                <div class="content__info-text text">total :
+                    <input type="number" class="content__info-number" id="total" value="0" readonly>
                 </div>
             </div>
-            <div class="content__list" id="content__list"></div>
-            <input type="text" class="add__task" id="add__task" placeholder="add a new task">
-    </div>
+        </div>
+        <div id="content__list"></div>
+        <input type="text" class="add__task" id="add__task" placeholder="add a task">
+    </section>
 </div>
 <script src="script.js"></script>
 </body>
