@@ -50,16 +50,6 @@ body{
     font-size: 1.3em;
     color: #262626;
 }
-#date{
-    width: 100%;
-    padding: 2%;
-    margin: 2%;
-    border: none;
-    text-align: left;
-}
-#date:focus{
-    outline: none;
-}
 
 .content__info{
     display: flex;
@@ -92,6 +82,7 @@ body{
     margin: 2%;
     display: flex;
     justify-content: space-between;
+    word-break: break-all;
 }
 .list-item:hover{
     background-color: #e3e3e3;
@@ -99,11 +90,11 @@ body{
 .list-item_done{
     text-decoration: line-through;
 }
-.list-item__remove-icon{
+.list-item__remove-icon, .list-item__edit-icon{
     opacity: 0.5;
     cursor: pointer;
 }
-.list-item__remove-icon:hover{
+.list-item__remove-icon:hover, .list-item__edit-icon:hover{
     opacity: 1;
     transition: 1s;
 }
@@ -116,8 +107,6 @@ body{
         font-size: 0.8em;
     }
 }
-
-/*anim*/
 
 .list-item_remove{
     animation: list-item_remove-anim .6s cubic-bezier(.55, -0.04, .91, .94) forwards;
